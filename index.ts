@@ -197,7 +197,7 @@ class AmapWx {
     })
   }
   /**
-   * 获取周边信息
+   * 获取POI数据
    */
   getPoiAround(props?: PoiAround): Promise<PoiAroundRes> {
     return new Promise((success, fail) => {
@@ -221,7 +221,7 @@ class AmapWx {
     })
   }
   /**
-   * 关键词搜索
+   * 获取输入提示词
    */
   getInputtips(props?: Inputtips): Promise<InputtipsRes> {
     return new Promise((success, fail) => {
@@ -244,7 +244,7 @@ class AmapWx {
     })
   }
   /**
-   * 地址逆编码
+   * 获取地址描述数据
    */
   getRegeo(props?: { location: string }): Promise<RegeoRes> {
     return new Promise((success, fail) => {
