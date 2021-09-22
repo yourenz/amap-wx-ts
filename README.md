@@ -21,7 +21,7 @@ amap.getWxLocation(async (loc) => {
   const regeoRes = await amap.getRegeo({ location: loc });
 
   // 获取天气
-  const weatherRes = await Amap.getWeather({
+  const weatherRes = await amap.getWeather({
     city: regeoRes.data.regeocode.addressComponent.adcode,
   });
   const cityWeather = weatherRes.data.lives[0];
